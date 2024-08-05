@@ -45,7 +45,7 @@ const Services = () => {
             <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">
               {/* top */}
               <div className="w-full flex justify-between items-center">
-                <div className="text-7xl font-extrabold text-outline text-transparent group-hover:text-outline-hover
+                <div className="text-8xl font-extrabold text-outline text-transparent group-hover:text-outline-hover
                 transition-all duration-500">{service.num}</div>
                 {/* rounded or not is here 'rounded-full' -> */}
                 <Link href={service.href} className="w-[60px] h-[60px] bg-white group-hover:bg-accent transition-all duration-500 flex 
