@@ -28,7 +28,7 @@ const Photo = () => {
         >
           <motion.circle 
           cx="253" 
-          cy="253" 
+          cy="255" 
           r="190" 
           stroke="#00ffff" 
           strokeWidth="4" 
