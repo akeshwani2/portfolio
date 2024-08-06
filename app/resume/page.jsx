@@ -8,7 +8,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const about = {
   title: "About me",
-  description: "Hi, I'm Arhaan Keshwani, a computer science student from Atlanta, Georgia, with a strong passion for cybersecurity and iOS app development. Specializing in cybersecurity, I frequently utilize Kali Linux to explore and address various security challenges. I am also skilled in developing sleek and functional iOS applications using Swift. My goal is to create innovative solutions that enhance digital experiences while ensuring robust security.",
+  description: "Hi, I'm Arhaan Keshwani, a computer science student from Atlanta, Georgia, with a strong passion for cybersecurity and app development. Specializing in cybersecurity, I frequently utilize Kali Linux to explore and address various security challenges. I am also skilled in developing sleek and functional iOS applications using Swift. My goal is to create innovative solutions that enhance digital experiences while ensuring robust security.",
   info: [
     {
       fieldName: "Experience",
