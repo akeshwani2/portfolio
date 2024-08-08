@@ -45,7 +45,6 @@ const experience = {
       company: "J.P. Morgan Chase & Co.",
       position: "Software Engineer Virtual Internship",
       duration: "2024",
-      link: "View"
     },
     {
       company: "J.P. Morgan Chase & Co.",
@@ -181,7 +180,47 @@ const certificates = {
     {
       company: "J.P. Morgan Chase & Co.",
       position: "Software Engineer Virtual Internship",
-      link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_YkBtirDYFF5Nu4awK_1723086231842_completion_certificate.pdf"
+      jpmorg: "View",
+    },
+    {
+      company: "J.P. Morgan Chase & Co.",
+      position: "Agile Virtual Internship",
+      jpmorgagile: "View",
+    },
+    {
+      company: "Goldman Sachs",
+      position: "Software Engineer Virtual Internship",
+      goldman: "View",
+    },
+    {
+      company: "Amazon",
+      position: "AWS Solutions Architect",
+      amazon: "View",
+    },
+    {
+      company: "Verizon",
+      position: "Cloud Platform Virtual Internship",
+      verizon: "View",
+    },
+    {
+      company: "Mastercard",
+      position: "Cybersecurity Virtual Internship",
+      mastercard: "View",
+    },
+    {
+      company: "Wells Fargo",
+      position: "Software Engineer Virtual Internship",
+      wellsfargo: "View",
+    },
+    {
+      company: "Lyft",
+      position: "Back-End Engineer Virtual Internship",
+      lyft: "View"
+    },
+    {
+      company: "National Cyber League",
+      position: "Globally Top Ranked Member",
+      ncl: "View"
     },
   ]
 }
@@ -315,9 +354,40 @@ const Resume = () => {
               <ScrollArea className="h-[400px]">
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[40px]">
                   {certificates.items.map((item, index)=> {
-                    return <li key={index} className="bg-[#232329] h-[180px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
-                      <span className="text-accent">{item.link}View</span>
+                    return <li key={index} className="bg-[#232329] h-[180px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start">
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_YkBtirDYFF5Nu4awK_1723086231842_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.jpmorg}</span>
+                      </a>
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/5QiaMtZ4k8ngYKn4D_JPMorgan%20Chase%20&%20Co._YkBtirDYFF5Nu4awK_1723092821413_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.jpmorgagile}</span>
+                      </a>
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_YkBtirDYFF5Nu4awK_1723088165806_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.goldman}</span>
+                      </a>
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/AWS/kkE9HyeNcw6rwCRGw_AWS%20APAC_YkBtirDYFF5Nu4awK_1723092195729_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.amazon}</span>
+                      </a>
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Verizon%20Communications%20Inc./aNJGnRtgfiK5fQqcR_Verizon_YkBtirDYFF5Nu4awK_1723091558324_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.verizon}</span>
+                      </a>
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mastercard/vcKAB5yYAgvemepGQ_Mastercard_YkBtirDYFF5Nu4awK_1723091863771_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.mastercard}</span>
+                      </a>
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Wells%20Fargo/9Wvq4L2WCFQDyyPp3_Wells%20Fargo_YkBtirDYFF5Nu4awK_1723090661666_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.wellsfargo}</span>
+                      </a>
+                      <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Lyft/xSw9echtixLAoPdsH_Lyft_YkBtirDYFF5Nu4awK_1723093557058_completion_certificate.pdf" target="_blank">
+                      <span className="text-accent">{item.lyft}</span>
+                      </a>
+                      <a href="https://cyberskyline.com/report/VAH0H988HYQG" target="_blank">
+                      <span className="text-accent">{item.ncl}</span>
+                      </a>
                       <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                      <div className="flex items-center gap-3">
+                        {/* dot */}
+                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                        <p className="text-white/60">{item.company}</p>
+                      </div>
                     </li>
                   })}
                 </ul>
