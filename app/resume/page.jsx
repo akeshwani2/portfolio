@@ -23,7 +23,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "arhaankeshwani200@gmail.com"
+      fieldValue: "akeshwanibusiness@gmail.com"
 
     },
   ]
@@ -174,7 +174,7 @@ const skills = {
 // Certificates
 
 const certificates = {
-  title: "My Certificates",
+  title: "My Certificates and Licenses",
   description: "I have completed a variety of certificates that have helped me enhance and better my software engineering and cybersecurity skills.",
   items: [
     {
