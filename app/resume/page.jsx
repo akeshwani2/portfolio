@@ -3,6 +3,7 @@
 import { FaHtml5, FaCss3, FaJs, FaReact, FaPython, FaSwift, FaGit, FaGithub, FaNodeJs, FaLinux} from "react-icons/fa";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import Link from "next/link";
 
 // about data
 
@@ -36,14 +37,50 @@ const experience = {
   description: "I have been a part of numerous projects, gaining extensive experience in full stack software engineering and cybersecurity.",
   items: [
     {
-      company: "J.P. Morgan",
-      position: "Software Engineer Virtual Internship",
-      duration: "2024 - Present",
+      company: "Roast",
+      position: "Full Stack Software Developer",
+      duration: "2024 - Present",      
     },
     {
-      company: "Roast",
-      position: "Full Stack Developer & Lead Designer",
-      duration: "2024 - Present",
+      company: "J.P. Morgan Chase & Co.",
+      position: "Software Engineer Virtual Internship",
+      duration: "2024",
+      link: "View"
+    },
+    {
+      company: "J.P. Morgan Chase & Co.",
+      position: "Agile Virtual Internship",
+      duration: "2024",
+    },
+    {
+      company: "Goldman Sachs",
+      position: "Software Engineer Virtual Internship",
+      duration: "2024",
+    },
+    {
+      company: "Amazon",
+      position: "AWS Solutions Architect",
+      duration: "2024",
+    },
+    {
+      company: "Verizon",
+      position: "Cloud Platform Virtual Internship",
+      duration: "2024",
+    },
+    {
+      company: "Mastercard",
+      position: "Cybersecurity Virtual Internship",
+      duration: "2024",
+    },
+    {
+      company: "Wells Fargo",
+      position: "Software Engineer Virtual Internship",
+      duration: "2024",
+    },
+    {
+      company: "Lyft",
+      position: "Back-End Engineer Virtual Internship",
+      duration: "2024",
     },
     {
       company: "Moneta",
@@ -53,7 +90,7 @@ const experience = {
     {
       company: "National Cyber League",
       position: "Globally Top Ranked Member",
-      duration: "Early 2024",
+      duration: "2024",
     },
   ],
 };
