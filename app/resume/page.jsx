@@ -172,9 +172,23 @@ const skills = {
   ],
 };
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+// Certificates
 
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+const certificates = {
+  title: "My Certificates",
+  description: "I have completed a variety of certificates that have helped me enhance and better my software engineering and cybersecurity skills.",
+  items: [
+    {
+      company: "J.P. Morgan Chase & Co.",
+      position: "Software Engineer Virtual Internship",
+      link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/J.P.%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan_YkBtirDYFF5Nu4awK_1723086231842_completion_certificate.pdf"
+    },
+  ]
+}
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -200,6 +214,7 @@ const Resume = () => {
           <TabsTrigger value="experience">Experience</TabsTrigger>
           <TabsTrigger value="skills">Skills</TabsTrigger>
           <TabsTrigger value="education">Education</TabsTrigger>
+          <TabsTrigger value="certificates">Certificates</TabsTrigger>
         </TabsList>
 
         {/* content */}
@@ -290,6 +305,23 @@ const Resume = () => {
                   </li>
                 })}
               </ul>
+            </div>
+          </TabsContent>
+          {/* certificates */}
+          <TabsContent value="certificates" className="w-full ">
+            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <h3 className="text-4xl font-bold ">{certificates.title}</h3>
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{certificates.description}</p>
+              <ScrollArea className="h-[400px]">
+                <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[40px]">
+                  {certificates.items.map((item, index)=> {
+                    return <li key={index} className="bg-[#232329] h-[180px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                      <span className="text-accent">{item.link}View</span>
+                      <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                    </li>
+                  })}
+                </ul>
+              </ScrollArea>
             </div>
           </TabsContent>
         </div>
