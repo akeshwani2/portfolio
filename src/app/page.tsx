@@ -58,7 +58,7 @@ export default function Home() {
      
       </div>
 
-      <div className="absolute bottom-6 md:bottom-8 right-4 md:right-60 animate-fade-in-2 text-xs text-zinc-500 transition-opacity duration-1000 ease-in-out">
+      <div className="absolute bottom-12 md:bottom-8 right-4 md:right-60 animate-fade-in-2 text-xs text-zinc-500 transition-opacity duration-1000 ease-in-out">
         {currentTime} ·{" "}
         <span
           key={statusIndex}
@@ -68,7 +68,7 @@ export default function Home() {
         </span>
       </div>
 
-      <div className="absolute bottom-6 md:bottom-8 left-4  md:left-60">
+      <div className="absolute bottom-12 md:bottom-8 left-4  md:left-60">
         <BottomNav />
       </div>
     </div>

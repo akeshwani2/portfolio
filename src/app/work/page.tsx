@@ -118,7 +118,7 @@ export default function WorkPage() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-6 md:bottom-10 md:left-60">
+      <div className="absolute bottom-12 left-6 md:bottom-10 md:left-60">
         <div className="flex flex-wrap gap-6 md:gap-10 max-w-4xl">
           {projects.map((project, index) => (
             <button
