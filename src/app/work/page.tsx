@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function WorkPage() {
   const [selectedProject, setSelectedProject] = useState(0);
@@ -51,12 +52,12 @@ export default function WorkPage() {
   return (
     <div className="h-screen relative bg-black">
       <div className="absolute top-6 left-6 md:top-10 md:left-60 z-10">
-        <a
+        <Link
           href="/"
           className="flex items-center gap-2 text-sm text-zinc-500 hover:text-[#F5F5DC] transition-colors group"
         >
           <span>back</span>
-        </a>
+        </Link>
       </div>
 
       <div className="flex items-center justify-center h-full px-6 md:px-0">
@@ -92,14 +93,14 @@ export default function WorkPage() {
               <div className="text-lg font-light">
                 {projects[selectedProject].name}
               </div>
-              <a
+              <Link
                 href={projects[selectedProject].link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-zinc-500 pt-1.25 hover:text-[#F5F5DC] transition-colors"
               >
                 <ArrowUpRight size={16} />
-              </a>
+              </Link>
             </div>
           </div>
 
