@@ -19,10 +19,10 @@ export default function WorkPage() {
     {
       name: "eleven",
       screenshot: "/eleven.png",
-      description:
-        "all communication in one place · built this at founders, inc.",
+      // description:
+      //   "acquired by Pally (YC S25) · built this at founders, inc.",
       descriptionWithLinks:
-        "all communication in one place · built this at <a href='https://f.inc' target='_blank' rel='noopener noreferrer' style='color: #F5F5DC; text-decoration: none;' onmouseover='this.style.color=\"white\"; this.style.textDecoration=\"underline\"' onmouseout='this.style.color=\"#F5F5DC\"; this.style.textDecoration=\"none\"'>founders, inc.</a>",
+        "acquired by <a href='https://pally.com' target='_blank' rel='noopener noreferrer' style='color: #F5F5DC; text-decoration: none;' onmouseover='this.style.color=\"white\"; this.style.textDecoration=\"underline\"' onmouseout='this.style.color=\"#F5F5DC\"; this.style.textDecoration=\"none\"'>Pally (YC S25)</a> · built this at <a href='https://f.inc' target='_blank' rel='noopener noreferrer' style='color: #F5F5DC; text-decoration: none;' onmouseover='this.style.color=\"white\"; this.style.textDecoration=\"underline\"' onmouseout='this.style.color=\"#F5F5DC\"; this.style.textDecoration=\"none\"'>founders, inc.</a>",
       year: "2025",
       link: "https://geteleven.ai",
     },
