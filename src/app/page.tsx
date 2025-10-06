@@ -74,12 +74,13 @@ export default function Home() {
       </div>
 
       {/* anxiety image background for mobile */}
-      <div className="absolute inset-0 pointer-events-none md:hidden -z-10">
+      <div className="fixed inset-0 pointer-events-none md:hidden">
         <Image
           src="/anxiety.png"
           alt="anxiety"
           fill
           className="object-cover opacity-15 invert contrast-125"
+          priority
         />
       </div>
     </div>
