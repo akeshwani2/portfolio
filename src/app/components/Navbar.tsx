@@ -10,7 +10,7 @@ export default function BottomNav() {
   ];
 
   return (
-    <nav className="flex gap-8 text-xs">
+    <nav className="flex gap-8 text-sm">
       {links.map((link) => {
         const isActive = pathname === link.href;
         return (
