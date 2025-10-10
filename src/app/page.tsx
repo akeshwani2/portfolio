@@ -168,7 +168,6 @@ export default function Home() {
             >
               axle
             </a>
-            ,
           </div>
           <div
             className="fade-in pt-8 flex justify-between"
