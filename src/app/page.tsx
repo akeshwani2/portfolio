@@ -108,7 +108,7 @@ export default function Home() {
         <div className="pt-8  md:text-xl text-sm text-black leading-relaxed max-w-5xl">
           <div className="italic">
             <div className="fade-in" style={{ animationDelay: "0.5s" }}>
-              previously i've: built{" "}
+              previously i&apos;ve: built{" "}
               <a
                 href="https://lyra.services"
                 target="_blank"
@@ -119,7 +119,7 @@ export default function Home() {
               </a>{" "}
               and{" "}
               <a
-                href="https://geteleven.ai"
+                href="https://elevenmails.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black font-bold bg-gradient-to-r from-black to-black bg-no-repeat bg-[length:0%_1px] bg-[position:0_100%] hover:bg-[length:100%_1px]  transition-all duration-300"
@@ -150,7 +150,7 @@ export default function Home() {
               >
                 Trace
               </a>
-              , all proceeds donated to men's mental health,
+              , all proceeds donated to men&apos;s mental health,
             </div>
             <div className="fade-in pt-2" style={{ animationDelay: "1.1s" }}>
               interned at{" "}
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
           </div>
           <div className="fade-in italic pt-8" style={{ animationDelay: "1.3s" }}>
-            now i'm working on{" "}
+            now i&apos;m working on{" "}
             <a
               href="https://axle-kappa.vercel.app"
               target="_blank"
