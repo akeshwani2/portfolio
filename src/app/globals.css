@@ -2,8 +2,29 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #ffffff;
 }
+
+/* @font-face {
+  font-family: "Casey";
+  src: url("/casey.woff2") format("woff2");
+  font-weight: 400;
+} */
+
+@font-face {
+  font-family: "Clash";
+  src: url("/Clash.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/Geist-Thin.ttf") format("truetype");
+  font-style: normal;
+}
+
+
 
 @theme inline {
   --color-background: var(--background);
@@ -14,28 +35,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #ffffff;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Satoshi", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@font-face {
-  font-family: "Satoshi";
-  src: url("./assets/fonts/Satoshi-Variable.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
+::selection {
+  background-color: black;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: black;
+  color: white;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(0px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -43,22 +67,7 @@ body {
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 4s ease-out forwards;
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
 }
-
-.animate-fade-in-2 {
-  animation: fadeIn 0.5s ease-out forwards;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.gradient-moving {
-  background-size: 200% 200%;
-  animation: gradientMove 30s ease infinite;
-}
-
