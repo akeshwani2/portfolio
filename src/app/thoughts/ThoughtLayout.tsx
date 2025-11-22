@@ -40,7 +40,7 @@ export default function ThoughtLayout({
         </div>
 
         {/* title */}
-        <h1 className="text-5xl md:text-7xl tracking-tighter italic mb-12 leading-[0.9] animate-[fadeIn_1s_ease-out]">
+        <h1 className="text-5xl md:text-7xl tracking-tighter italic mb-12  animate-[fadeIn_1s_ease-out]">
           {title}
         </h1>
 
@@ -73,6 +73,8 @@ export default function ThoughtLayout({
         {/* content */}
         <article className="space-y-6 text-lg md:text-xl tracking-tight  leading-relaxed text-white/80 animate-[fadeIn_1.8s_ease-out]">
           {children}
+          <div className="text-white/40 mt-4 tracking-tight italic">- AK</div>
+
         </article>
 
         {/* footer spacer */}
