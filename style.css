@@ -119,8 +119,10 @@ p {
         max-width: 100%;
         padding: 1rem;
         overflow: hidden;
+        font-size: 0.9rem;
     }
     ul {
         line-height: 1.2;
+        font-size: 0.85rem;
     }
 }
