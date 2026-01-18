@@ -23,22 +23,22 @@ function Footer() {
                 {/* name + links */}
                 <div className="flex flex-col items-center md:items-end gap-4">
                     <div className="flex flex-col items-center md:items-end text-black">
-                        <span className="text-3xl font-medium leading-tight">Arhaan</span>
-                        <span className="text-3xl font-medium leading-tight">Keshwani</span>
+                        <span className="text-3xl font-medium leading-tight">Arhaan Keshwani</span>
+                        
                     </div>
-                    <div className="flex gap-6">
+                    <div className="flex gap-2">
                         {links.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group relative text-gray-500 hover:text-black transition-colors"
+                                className="group relative text-gray-500 bg-gray-100 rounded-full px-4 py-2 hover:text-black transition-colors"
                             >
                                 {link.name}
-                                <span
+                                {/* <span
                                     className="absolute left-0 -bottom-1 h-[1.5px] bg-black transition-transform duration-300 ease-out origin-left w-full scale-x-0 group-hover:scale-x-100"
-                                />
+                                /> */}
                             </a>
                         ))}
                     </div>
