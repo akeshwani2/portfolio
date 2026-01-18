@@ -59,8 +59,7 @@ function Body() {
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className={`grid grid-cols-1 md:grid-cols-2 gap-18 md:gap-24 text-black items-center py-24 ${index !== projects.length ? 'border-b border-gray-200' : ''
-              }`}
+            className={`grid grid-cols-1 md:grid-cols-2 gap-18 md:gap-24 text-black items-center py-24 border-gray-200 ${index === 0 ? 'border-t' : ''} ${index !== projects.length ? 'border-b' : ''}`}
           >
             <div className="flex flex-col gap-6">
               <p className="text-gray-500 text-base">{project.date}</p>
