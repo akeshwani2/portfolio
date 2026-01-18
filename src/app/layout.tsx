@@ -10,7 +10,7 @@ const sfPro = localFont({
 
 export const metadata: Metadata = {
   title: "Arhaan Keshwani",
-  description: "",
+  description: "Software Engineer",
 };
 
 export default function RootLayout({
