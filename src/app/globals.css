@@ -31,5 +31,9 @@ body {
   color: var(--foreground);
   font-family: "SFPro", Arial, Helvetica, sans-serif;
   cursor: url('/cursor.svg') 3 3, auto;
+}
 
+::selection {
+  background: black;
+  color: white;
 }
