@@ -37,3 +37,12 @@ body {
   background: black;
   color: white;
 }
+
+/* hide scrollbar */
+html {
+  scrollbar-width: none; /* firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* chrome, safari, edge */
+}
