@@ -1,4 +1,6 @@
 import Image from "next/image"
+import { CometCard } from "@/components/ui/comet-card"
+
 function Footer() {
     const links = [
         { name: "LinkedIn", href: "https://www.linkedin.com/in/arhaan-keshwani/" },
@@ -10,15 +12,17 @@ function Footer() {
         <footer className="w-full mx-auto px-6 md:px-20 py-16">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
                 {/* image with frame */}
-                <div className="relative group mx-auto md:mx-0 bg-white p-1 rounded-xl shadow-[0_0_40px_rgba(0,0,0,0.15)] transition-all duration-300   hover:scale-110 ">
-                    <Image
-                        src="/boy2.jpg"
-                        alt="Arhaan"
-                        width={200}
-                        height={200}
-                        className="rounded-lg"
-                    />
-                </div>
+                <CometCard className="mx-auto md:mx-0" rotateDepth={12} translateDepth={15}>
+                    <div className="bg-white p-1 rounded-xl">
+                        <Image
+                            src="/boy2.jpg"
+                            alt="Arhaan"
+                            width={200}
+                            height={200}
+                            className="rounded-lg"
+                        />
+                    </div>
+                </CometCard>
 
                 {/* name + links */}
                 <div className="flex flex-col items-center md:items-end gap-4">
@@ -33,7 +37,7 @@ function Footer() {
                                 href={link.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group relative text-gray-500 bg-gray-100 rounded-full px-4 py-2 hover:text-black transition-colors"
+                                className="group relative text-gray-500 hover:bg-gray-200 bg-gray-100 rounded-full px-4 py-2 hover:text-black transition-all duration-300"
                             >
                                 {link.name}
                                 {/* <span
