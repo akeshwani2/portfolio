@@ -3,7 +3,7 @@ const projects = [
   {
     date: "2025",
     title: "Polymarket",
-    description: "Got flown out to New York City for a software engineering work trial.",
+    description: "Got flown out to New York City for a Software Engineering & Product work trial.",
     link: "https://polymarket.com",
     media: "/polymarket1.png",
     type: "image",
