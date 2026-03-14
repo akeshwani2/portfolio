@@ -49,6 +49,14 @@ const projects = [
     media: "/trace.mov",
     type: "video",
   },
+  {
+    date: "2024",
+    title: "JPMorgan Chase",
+    description: "Software Engineering Intern building frontend tools in Manhattan, NY.",
+    link: "",
+    media: "/jpmc2.png",
+    type: "image",
+  },
 ]
 
 function Body() {
@@ -69,14 +77,16 @@ function Body() {
                 <p className="text-gray-500 text-lg leading-relaxed py-2">{project.description}</p>
               </div>
 
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-all duration-300 text-lg text-black w-fit"
-              >
-                View
-              </a>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-all duration-300 text-lg text-black w-fit"
+                >
+                  View
+                </a>
+              )}
             </div>
 
             <div className="relative aspect-video overflow-hidden rounded-xl">
