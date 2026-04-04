@@ -5,8 +5,9 @@ const projects = [
     title: "Polymarket",
     description: "Got flown out to New York City for a Software Engineering & Product work trial.",
     link: "https://polymarket.com",
-    media: "/polymarket1.png",
-    type: "image",
+    media: "/logo-blue.svg",
+    type: "image-logo",
+    imageClassName: "object-contain bg-[#2E5CFF] p-30",
   },
   {
     date: "2025",
@@ -51,11 +52,13 @@ const projects = [
   },
   {
     date: "2024",
-    title: "JPMorgan Chase",
+    title: "J.P. Morgan",
     description: "Software Engineering Intern building frontend tools in Manhattan, NY.",
     link: "",
-    media: "/jpmc2.png",
+    media: "/jpm.png",
     type: "image",
+    imageClassName: "object-contain bg-white p-12 md:p-20",
+    unoptimized: true,
   },
 ]
 
@@ -104,7 +107,8 @@ function Body() {
                   src={project.media}
                   alt={project.title}
                   fill
-                  className={`${project.objectFit === "contain" ? "object-contain bg-black" : "object-fill"} rounded-xl border border-gray-200`}
+                  unoptimized={project.unoptimized}
+                  className={`${project.objectFit === "contain" ? "object-contain bg-black" : project.imageClassName ?? "object-fill"} rounded-xl border border-gray-200`}
                 />
               )}
             </div>
