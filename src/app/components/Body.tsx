@@ -7,7 +7,8 @@ const projects = [
     link: "https://polymarket.com",
     media: "/logo-blue.svg",
     type: "image-logo",
-    imageClassName: "object-contain bg-[#2E5CFF] p-30",
+    mediaClassName: "bg-[#2E5CFF]",
+    imageClassName: "object-contain object-center p-6 sm:p-10 md:p-14",
   },
   {
     date: "2025",
@@ -92,7 +93,7 @@ function Body() {
               )}
             </div>
 
-            <div className="relative aspect-video overflow-hidden rounded-xl">
+            <div className={`relative aspect-video overflow-hidden rounded-xl ${project.mediaClassName ?? ""}`}>
               {project.type === "video" ? (
                 <video
                   src={project.media}
@@ -107,6 +108,7 @@ function Body() {
                   src={project.media}
                   alt={project.title}
                   fill
+                  sizes="(max-width: 768px) calc(100vw - 3rem), 50vw"
                   unoptimized={project.unoptimized}
                   className={`${project.objectFit === "contain" ? "object-contain bg-black" : project.imageClassName ?? "object-fill"} rounded-xl border border-gray-200`}
                 />
