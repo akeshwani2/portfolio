@@ -2,6 +2,15 @@ import Image from "next/image"
 const projects = [
   {
     date: "2025",
+    title: "Cluely",
+    description: "Building cool apps used by 10,000+ users everyday.",
+    link: "",
+    media: "/cluely-logo-black.svg",
+    type: "image",
+    imageClassName: "object-contain bg-white p-10 sm:p-14 md:p-20",
+  },
+  {
+    date: "2025",
     title: "Polymarket",
     description: "Got flown out to New York City for a Software Engineering & Product work trial.",
     link: "https://polymarket.com",
@@ -58,7 +67,9 @@ const projects = [
     link: "",
     media: "/jpm.png",
     type: "image",
-    imageClassName: "object-contain bg-white p-12 md:p-20",
+    fixedImageWidth: 690,
+    fixedImageHeight: 180,
+    fixedImageClassName: "h-auto w-[360px] max-w-[80%]",
     unoptimized: true,
   },
 ]
@@ -78,7 +89,9 @@ function Body() {
 
               <div>
                 <h3 className="text-3xl">{project.title}</h3>
-                <p className="text-gray-500 text-lg leading-relaxed py-2">{project.description}</p>
+                {project.description && (
+                  <p className="text-gray-500 text-lg leading-relaxed py-2">{project.description}</p>
+                )}
               </div>
 
               {project.link && (
@@ -103,6 +116,17 @@ function Body() {
                   playsInline
                   className="w-full h-full object-fill rounded-xl"
                 />
+              ) : project.fixedImageWidth && project.fixedImageHeight ? (
+                <div className="flex h-full w-full items-center justify-center rounded-xl border border-gray-200 bg-white">
+                  <Image
+                    src={project.media}
+                    alt={project.title}
+                    width={project.fixedImageWidth}
+                    height={project.fixedImageHeight}
+                    unoptimized={project.unoptimized}
+                    className={project.fixedImageClassName ?? "h-auto w-auto"}
+                  />
+                </div>
               ) : (
                 <Image
                   src={project.media}
