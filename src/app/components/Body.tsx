@@ -3,7 +3,7 @@ const projects = [
   {
     date: "2025",
     title: "Cluely",
-    description: "Building cool apps used by 10,000+ users everyday.",
+    description: "Building cool apps used by 100,000+ users everyday.",
     link: "",
     media: "/cluely-logo-black.svg",
     type: "image",
