@@ -4,7 +4,7 @@ const projects = [
     date: "2025",
     title: "Cluely",
     description: "Building cool apps used by 100,000+ users everyday.",
-    link: "",
+    link: "https://cluely.com/",
     media: "/cluely-logo-black.svg",
     type: "image",
     imageClassName: "object-contain bg-white p-10 sm:p-14 md:p-20",
