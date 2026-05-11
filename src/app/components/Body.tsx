@@ -1,6 +1,16 @@
 import Image from "next/image"
 const projects = [
   {
+    date: "2026",
+    title: "Norfolk Southern",
+    description: "Incoming Gen AI Intern.",
+    link: "https://www.norfolksouthern.com/",
+    media: "/norfolk-southern.png",
+    type: "image",
+    mediaClassName: "bg-black",
+    imageClassName: "object-cover",
+  },
+  {
     date: "2025",
     title: "Cluely",
     description: "Building cool apps used by 100,000+ users everyday.",
