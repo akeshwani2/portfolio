@@ -3,9 +3,25 @@ import "./globals.css";
 import localFont from 'next/font/local'
 import Footer from "./components/Footer";
 
-const sfPro = localFont({
-  src: "../../public/SFPro.otf",
-  variable: "--font-sf-pro",
+const sfProRounded = localFont({
+  src: [
+    {
+      path: "../../public/SFProRounded-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/SFProRounded-Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/SFProRounded-Semibold.otf",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  variable: "--font-sf-pro-rounded",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sfPro.variable} antialiased`}
+        className={`${sfProRounded.variable} antialiased`}
       >
         {children}
         <Footer />
