@@ -1,7 +1,16 @@
 import Image from "next/image"
 const projects = [
   {
-    date: "2025",
+    date: "2026",
+    title: "Mach10",
+    description: "Did a mini raise at a six-figure valuation for my app agency.",
+    link: "https://remindmetrace.com",
+    media: "/mach10.png",
+    type: "image",
+    imageClassName: "object-cover",
+  },
+  {
+    date: "2026",
     title: "Cluely",
     description: "Building cool apps used by 100,000+ users everyday.",
     link: "https://cluely.com/",
@@ -10,9 +19,27 @@ const projects = [
     imageClassName: "object-contain bg-white p-10 sm:p-14 md:p-20",
   },
   {
+    date: "2026",
+    title: "Instagram",
+    description: "Grew from 0 to 90,000 followers in 3 months.",
+    link: "https://instagram.com/akeshwani3",
+    media: "/instagram.png",
+    type: "image",
+    imageClassName: "object-cover",
+  },
+  {
+    date: "2026",
+    title: "Norfolk Southern",
+    description: "Gen AI Intern.",
+    link: "https://www.norfolksouthern.com/",
+    media: "/norfolk-southern.png",
+    type: "image",
+    imageClassName: "object-cover",
+  },
+  {
     date: "2025",
     title: "Polymarket",
-    description: "Got flown out to New York City for a Software Engineering & Product work trial.",
+    description: "Software Engineering & Product Design Intern in New York City.",
     link: "https://polymarket.com",
     media: "/logo-blue.svg",
     type: "image-logo",
@@ -67,6 +94,7 @@ const projects = [
     link: "",
     media: "/jpm.png",
     type: "image",
+    mediaClassName: "border border-gray-200 bg-white",
     fixedImageWidth: 690,
     fixedImageHeight: 180,
     fixedImageClassName: "h-auto w-[360px] max-w-[80%]",
@@ -117,7 +145,7 @@ function Body() {
                   className="w-full h-full object-fill rounded-xl"
                 />
               ) : project.fixedImageWidth && project.fixedImageHeight ? (
-                <div className="flex h-full w-full items-center justify-center rounded-xl border border-gray-200 bg-white">
+                <div className="absolute inset-0 flex items-center justify-center">
                   <Image
                     src={project.media}
                     alt={project.title}

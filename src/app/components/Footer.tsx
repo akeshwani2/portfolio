@@ -6,6 +6,7 @@ function Footer() {
         { name: "LinkedIn", href: "https://www.linkedin.com/in/arhaan-keshwani/" },
         { name: "GitHub", href: "https://github.com/akeshwani2" },
         { name: "X", href: "https://x.com/akeshwan1" },
+        { name: "Instagram", href: "https://instagram.com/akeshwani3" },
     ]
 
     return (
