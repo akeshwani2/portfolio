@@ -21,9 +21,9 @@ const projects = [
   {
     date: "2026",
     title: "Instagram",
-    description: "Grew from 0 to 90,000 followers in 3 months.",
+    description: "Hit 100,000 followers in less than 3 months.",
     link: "https://instagram.com/akeshwani3",
-    media: "/instagram.png",
+    media: "/instagram-100k-v3.png",
     type: "image",
     imageClassName: "object-cover",
   },
