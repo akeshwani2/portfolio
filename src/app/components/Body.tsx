@@ -2,6 +2,15 @@ import Image from "next/image"
 const projects = [
   {
     date: "2026",
+    title: "EcoGPT",
+    description: "Leading growth and managing a team of creators. Founded by the ex-Cal AI team.",
+    link: "https://apps.apple.com/us/app/id6756059656",
+    media: "/ecogpt-logo.png",
+    type: "image",
+    imageClassName: "object-contain bg-white p-8 sm:p-10 md:p-12",
+  },
+  {
+    date: "2026",
     title: "Mach10",
     description: "Did a mini raise at a six-figure valuation for my app agency.",
     link: "https://remindmetrace.com",
